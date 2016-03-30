@@ -82,13 +82,12 @@ public:
     bool RunLoop(std::function<void(void)> render)
     {
         /* Loop until the user closes the window */
-        GLFWwindow* window = static_cast<GLFWwindow*>(window_);
-        while (!glfwWindowShouldClose(window)) {
+        while (!glfwWindowShouldClose(window_)) {
 
             render();
 
             /* Swap front and back buffers */
-            glfwSwapBuffers(window);
+            glfwSwapBuffers(window_);
 
             /* Poll for and process events */
             glfwPollEvents();
