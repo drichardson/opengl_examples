@@ -33,12 +33,7 @@ link_libraries(
     gl3w
     )
 
-add_executable(version
-    src/version.cc
-    )
-
-add_executable(clear
-    src/clear.cc
-    )
+add_executable(version src/version.cc)
+add_executable(clear src/clear.cc)
 
 
