@@ -3,12 +3,6 @@
 
 #include <GL/gl3w.h>
 
-#include <fcntl.h>
-#include <iostream>
-#include <sys/mman.h>
-#include <sys/stat.h>
-#include <unistd.h>
-
 namespace common {
 
 // Create vertex and fragment shader objects, load the source, compile them, and link them into the given program.

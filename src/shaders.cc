@@ -1,5 +1,11 @@
 #include "shaders.h"
 
+#include <fcntl.h>
+#include <iostream>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <unistd.h>
+
 namespace {
 
 //

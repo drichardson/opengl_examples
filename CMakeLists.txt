@@ -43,5 +43,5 @@ link_libraries(
 
 add_executable(version src/version.cc)
 add_executable(clear src/clear.cc)
-add_executable(triangle src/triangle.cc)
+add_executable(point src/point.cc)
 
