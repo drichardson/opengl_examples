@@ -27,13 +27,21 @@ add_library(gl3w
     gl3w/gl3w.c
     )
 
-link_libraries(
+add_library(common
+    src/window.cc
+    src/shaders.cc
+    )
+
+target_link_libraries(common
     glfw
     ${GLFW_LIBRARIES}
-    gl3w
+    gl3w)
+
+link_libraries(
+    common
     )
 
 add_executable(version src/version.cc)
 add_executable(clear src/clear.cc)
-
+add_executable(triangle src/triangle.cc)
 

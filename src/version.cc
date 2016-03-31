@@ -1,4 +1,6 @@
-#include "common.h"
+#include "window.h"
+#include <GL/gl3w.h>
+#include <iostream>
 
 int main()
 {
