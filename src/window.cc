@@ -59,7 +59,7 @@ bool Window::LoadOpenGLCoreProfile()
     return true;
 }
 
-bool Window::RunLoop(std::function<void(void)> render)
+void Window::RunLoop(std::function<void(void)> render)
 {
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window_)) {
@@ -74,7 +74,6 @@ bool Window::RunLoop(std::function<void(void)> render)
     }
 
     glfwTerminate();
-    return true;
 }
 
 }

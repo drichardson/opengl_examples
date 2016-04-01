@@ -31,7 +31,7 @@ public:
 
     void MakeContextCurrent();
     bool LoadOpenGLCoreProfile();
-    bool RunLoop(std::function<void(void)> render);
+    void RunLoop(std::function<void(void)> render);
 };
 
 }
