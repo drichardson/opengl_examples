@@ -21,7 +21,6 @@ const char* fragment_shader_source =
 
 int main()
 {
-    std::cout << "vertex: " << vertex_shader_source << std::endl;
     common::Window* window = common::Window::CreateWindow();
     window->LoadOpenGLCoreProfile();
     window->MakeContextCurrent();
